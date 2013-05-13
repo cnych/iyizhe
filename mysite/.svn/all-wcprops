@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/chinacache/!svn/ver/3/1/mysite
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/chinacache/!svn/ver/8/1/mysite/urls.py
+END
+wsgi.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/chinacache/!svn/ver/5/1/mysite/wsgi.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/chinacache/!svn/ver/3/1/mysite/__init__.py
+END
+settings.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/chinacache/!svn/ver/5/1/mysite/settings.py
+END
