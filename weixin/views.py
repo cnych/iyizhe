@@ -44,9 +44,14 @@ def checkSign(request):
 
 def responseMsg(request):
     rawStr = smart_str(request.body)
-    msg = parseXml(ET.fromstring(rawStr))
 
-    queryStr = msg.get('Content', 'You have input nothing!')
+    msg = parseXml(ET.fromstring(rawStr))
+    msgType = msg.get('MsgType', '')
+    queryStr = ''
+    if msgType == 'text':
+        queryStr = msg.get('Content', 'You have input nothing!')
+    elif msgType == 'voice':
+        queryStr = msg.get('Recognition', 'Can not recognize the voice!')
 
     raw_youdao_url = '%s?keyfrom=%s&key=%s&type=data&doctype=%s&version=1.1&q=%s' % (
         YOUDAO_API_URL, YOUDAO_API_KEYFROM, YOUDAO_API_KEY,
